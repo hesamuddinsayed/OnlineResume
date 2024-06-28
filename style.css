@@ -23,12 +23,26 @@ body {
 img {
     width: 100%;
     height: 100%;
-    border-radius: 25%;
+    border-radius: 50%;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase
 }
 
 /* layouts */
@@ -54,4 +68,77 @@ a {
 .profile {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
+}
+
+.group-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* profile */
+.profile_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile_image {
+    max-width: 200px;
+}
+
+.profile_name_firstname {
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+
+.profile_name_lastname {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+
+.profile_title {
+    font-size: 1.5 rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.downloadbutton {
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.downloadbutton:hover {
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}
+
+/* Expertise */
+.skill_list {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+/* Ref */
+.ref_item {
+    margin-top: 2rem;
+}
+
+.ref_name {
+    font-size: 1.6rem;
+    font-weight: 700;
 }
