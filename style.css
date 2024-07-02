@@ -88,10 +88,33 @@ a {
     margin-bottom: 2rem;
 }
 
-.group-1 {
+.group-1,
+.group-2 {
     display: flex;
     flex-direction: column;
     gap: 5rem;
+}
+
+.group-3 {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.group-3 > div {
+    flex: 1;
+}
+@media only screen and (max-width 768px) {
+    .profile {
+        margin-bottom: 0;
+    }
+    .group-3 {
+        flex-direction: column;
+    }
 }
 
 /* profile */
@@ -164,5 +187,93 @@ a {
 /* Education */
 .edu_item {
     margin-top: 2rem;
+}
 
+/* Certification */
+.certification_item {
+    margin-top: 2rem;
+}
+
+/* Exp */
+.exp_item {
+    margin-top: 2rem;
+}
+
+/* Awards */
+.awards_item {
+    margin-top: 2rem;
+}
+
+/* Interests */
+.interests_items {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.interests_item {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-color);
+}
+
+.interests_item svg {
+    width: 2rem;
+}
+
+/* Contact */
+.email_address {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.email_address:hover {
+    color: var(--primary-color);
+}
+
+/* Socials */
+.socials_items {
+    margin-top: 2rem;
+}
+
+.socials_item {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
+
+.socials_item:hover {
+    color: var(--primary-color);
+}
+
+.socials_item svg {
+    width: 2rem;
+}
+
+hr {
+    grid-column: 1/-1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-top: 2px solid rgba(128, 128, 128, 0.229);
+}
+@media only screen and (max-width: 768px) {
+    hr {
+        margin: 0 auto;
+    }
 }
