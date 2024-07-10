@@ -7,8 +7,8 @@
 }
 
 :root {
-    --primary-color: #ff7613;
-    --text-color: #727171;
+    --primary-color: #9113ff;
+    --text-color: #727172;
 }
 html {
     font-size: 10px;
@@ -152,7 +152,6 @@ a {
 
 .downloadbutton {
     display: block;
-    text-decoration: underline;
     font-size: 1.6rem;
     margin-top: 1rem;
 }
